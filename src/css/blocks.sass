@@ -1,0 +1,471 @@
+@import "app"
+
+.b
+  &-container
+    max-width: 894px
+    margin: 0 auto
+  &-main
+    display: grid
+    grid-template-columns: 1fr auto
+    grid-column-gap: 50px
+    width: 100%
+    padding: 121px 0
+    @media (max-width: $laptop)
+      grid-template-columns: 1fr
+      text-align: center
+      grid-row-gap: 100px
+    @media (max-width: $mobile)
+      padding: 34px 0 0 0
+      grid-row-gap: 0
+    &__logo
+      display: none
+      @media (max-width: $mobile)
+        display: block
+      &__title
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+        color: #FFFFFF
+        margin-bottom: 7px
+      &__sub
+        font-style: italic
+        font-weight: 500
+        font-size: 10px
+        line-height: 12px
+    &__desc
+      padding-top: 40px
+      @media (max-width: $mobile)
+        padding-top: 60px
+    &__exchange
+      display: flex
+      align-items: center
+      margin-bottom: 37px
+      @media (max-width: $laptop)
+        justify-content: center
+      @media (max-width: $mobile)
+        margin-bottom: 16px
+      &__item
+        font-weight: 500
+        font-size: 15px
+        line-height: 18px
+        color: #5AC06A
+        display: flex
+        align-items: center
+        margin-right: 12px
+        @media (max-width: $mobile)
+          font-size: 12px
+          line-height: 15px
+          margin-right: 9px
+        span
+          color: #999999
+          margin-right: 4px
+          img
+            width: 9px
+            height: 19px
+            display: block
+            @media (max-width: $mobile)
+              height: 15px
+              width: 6px
+        &>img
+          width: 12px
+          height: 19px
+          margin-left: 4px
+    &__title
+      font-weight: 500
+      font-size: 36px
+      line-height: 113.84%
+      color: #FFFFFF
+      margin-bottom: 54px
+      @media (max-width: $laptop)
+        max-width: 453px
+        margin-left: auto
+        margin-right: auto
+      @media (max-width: $mobile)
+        font-size: 26px
+        line-height: 29px
+        margin-bottom: 33px
+    &__image
+      @media (max-width: $laptop)
+        display: flex
+        justify-content: center
+      @media (max-width: $mobile)
+        margin-top: 40px
+      img
+        width: 314px
+        height: 324px
+        display: block
+        @media (max-width: $laptop)
+          width: 398px
+          height: 412px
+        @media (max-width: $mobile)
+          width: 375px
+          height: auto
+    &__btn
+      .btn
+        @media (max-width: $mobile)
+          height: 37px
+          border: 2px solid #FFFFFF
+          font-weight: 500
+          font-size: 18px
+          line-height: 113.84%
+  &-info
+    padding: 32px 0 140px 0
+    @media (max-width: $mobile)
+      padding: 0
+      margin-top: -122px
+    &__title
+      text-align: center
+      margin-bottom: 66px
+      @media (max-width: $laptop)
+        margin-bottom: 77px
+      @media (max-width: $mobile)
+        margin-bottom: 0
+    &__list
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      grid-row-gap: 34px
+      flex-wrap: wrap
+      max-width: 640px
+      padding-left: 55px
+      margin: 0 auto
+      margin-bottom: 75px
+      @media (max-width: $laptop)
+        max-width: 742px
+        padding-left: 82px
+        grid-row-gap: 32px
+        margin-bottom: 100px
+      @media (max-width: $mobile)
+        grid-template-columns: 1fr
+        grid-row-gap: 25px
+        padding: 42px
+        margin: 0
+    &__item
+      @media (max-width: $mobile)
+        display: flex
+      &__icon
+        display: flex
+        min-height: 60px
+        align-items: center
+        margin-bottom: 6px
+        @media (max-width: $mobile)
+          min-height: auto
+          min-width: 56px
+      &__text
+        display: flex
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        @media (max-width: $mobile)
+          max-width: 228px
+          br
+            display: none
+    &__btn
+      text-align: center
+  &-why
+    padding-bottom: 114px
+    @media (max-width: $laptop)
+      max-width: 705px
+      margin: 0 auto
+      padding-top: 38px
+      padding-bottom: 80px
+    @media (max-width: $mobile)
+      padding-top: 75px
+      padding-bottom: 71px
+    &__item
+      display: grid
+      grid-template-columns: 1fr 320px
+      padding: 0
+      margin-top: 140px
+      @media (max-width: $laptop)
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 20px
+        margin-top: 136px
+      @media (max-width: $mobile)
+        grid-template-columns: 1fr
+        grid-template-areas: 'desc' 'image'
+        margin-top: 28px
+      &__image
+        padding-left: 5px
+        @media (max-width: $mobile)
+          grid-area: image
+          display: flex
+          justify-content: center
+        img
+          display: block
+          max-width: 100%
+        &.is-two
+          @media (max-width: $mobile)
+            padding: 0
+            margin-top: -98px
+            position: relative
+            &:before
+              content: ''
+              width: 20px
+              height: 28px
+              background: url(~assets/sl.png) no-repeat
+              background-size: contain
+              position: absolute
+              left: 50%
+              top: -25px
+              margin-left: 105px
+            img
+              margin: 0 !important
+      &__desc
+        padding-top: 30px
+        @media (max-width: $mobile)
+          grid-area: desc
+          text-align: center
+          padding: 0
+          margin-bottom: 80px
+        h2
+          margin-bottom: 43px
+          @media (max-width: $mobile)
+            text-align: center
+            padding: 0 34px
+            margin: 0 0 26px 0
+        ul
+          margin: 0 0 56px 0
+          padding: 0
+          @media (max-width: $mobile)
+            margin-bottom: 40px
+          li
+            list-style: none
+            margin: 0
+            padding: 0 0 1px 20px
+            font-weight: normal
+            font-size: 16px
+            line-height: 142.84%
+            position: relative
+            @media (max-width: $mobile)
+              text-align: center
+              padding: 0 0 1px 0
+
+            &:before
+              content: '—'
+              position: absolute
+              left: 0
+              top: 0
+              @media (max-width: $mobile)
+                display: none
+      &:first-child
+        margin-top: 0
+      &:nth-child(1)
+        .b-why__item__image
+          img
+            @media (max-width: $laptop)
+             max-width: 313px
+      &:nth-child(2)
+        .b-why__item__image
+          padding-left: 11px
+          @media (max-width: $laptop)
+            padding-left: 0
+            img
+              width: 373px
+              max-width: none
+              margin-left: -24px
+        .b-why__item__desc
+          padding-top: 44px
+    &__btn
+      text-align: center
+      padding-top: 34px
+      @media (max-width: $laptop)
+        padding-top: 60px
+      @media (max-width: $mobile)
+        display: flex
+        justify-content: center
+        padding-top: 0
+  &-contact
+    &-info
+      margin-top: 82px
+      padding-bottom: 60px
+      @media (max-width: $laptop)
+        max-width: 572px
+        margin: 0 auto
+        margin-top: 74px
+        padding-bottom: 65px
+      @media (max-width: $mobile)
+        margin-top: 30px
+        max-width: 228px
+        padding-bottom: 32px
+      &__row
+        display: grid
+        grid-template-columns: 250px 1fr
+        @media (max-width: $laptop)
+          grid-template-columns: 1fr
+          grid-row-gap: 64px
+        @media (max-width: $mobile)
+          grid-row-gap: 50px
+        &+&
+          margin-top: 44px
+          border-top: 1px solid #444444
+          padding-top: 47px
+          @media (max-width: $laptop)
+            margin-top: 54px
+            grid-row-gap: 45px
+          @media (max-width: $mobile)
+            margin-top: 42px
+            padding-top: 40px
+            grid-row-gap: 26px
+
+            .b-contact-info__list
+              @media (max-width: $mobile)
+                grid-row-gap: 10px
+
+      &__title
+        font-weight: 600
+        font-size: 16px
+        line-height: 113.84%
+        @media (max-width: $laptop)
+          text-align: center
+      &__list
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 40px
+        grid-row-gap: 48px
+        @media (max-width: $mobile)
+          grid-template-columns: 1fr
+          grid-row-gap: 20px
+      &__item
+        position: relative
+        padding-left: 53px
+        padding-top: 3px
+
+        &:nth-child(3)
+          @media (max-width: $mobile)
+            margin-top: 20px
+
+        img
+          position: absolute
+          left: 0
+          top: 2px
+        strong
+          display: block
+          font-weight: 600
+          font-size: 16px
+          line-height: 113.84%
+          color: #FFFFFF
+          @media (max-width: $mobile)
+            font-size: 12px
+            line-height: 15px
+            &.text-phone
+              font-weight: 600
+              font-size: 16px
+              line-height: 113.84%
+        span
+          display: block
+          font-weight: 500
+          font-size: 14px
+          line-height: 17px
+          color: #AEAEAE
+          @media (max-width: $mobile)
+            br
+              display: none
+  &-tablePrice
+    &-info
+      @media only screen and (max-width: $mobile)
+        display: none
+      &__row
+        border-top: 1px solid #666666
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 20px
+        padding: 16px 0
+        &:first-child
+          border-top: 0
+    &-box
+      margin-top: 28px
+      padding-bottom: 20px
+      @media only screen and (max-width: $mobile)
+        display: none
+      &.isActive
+        @media only screen and (max-width: $mobile)
+          display: block
+      &-last
+        padding-bottom: 0
+        margin-bottom: -18px
+        @media only screen and (max-width: $mobile)
+          padding-bottom: 20px
+          display: none
+      .row-padding-title
+        padding: 13px 0
+        @media only screen and (max-width: $mobile)
+          display: none
+      .row-padding
+        min-height: 65px
+        @media only screen and (max-width: $mobile)
+          align-items: flex-start
+        &>.col-6
+          @media only screen and (max-width: $mobile)
+            width: 100%
+            font-weight: bold
+            font-size: 14px
+            line-height: 113.84%
+            color: #ffffff
+            margin-bottom: 17px
+            padding-top: 15px
+        &>.col-4
+          @media only screen and (max-width: $mobile)
+            padding: 0 24px 8px 0
+            width: auto
+            max-width: 140px
+            font-size: 12px
+            &:before
+              content: 'Валюта'
+              font-weight: 600
+              font-size: 10px
+              line-height: 113.84%
+              color: #27AE60
+              display: block
+              margin-bottom: 5px
+        &>.col-2
+          @media only screen and (max-width: $mobile)
+            padding: 0 24px 8px 0
+            width: auto
+            &:before
+              content: 'Комиссия'
+              font-weight: 600
+              font-size: 10px
+              line-height: 113.84%
+              color: #27AE60
+              display: block
+              margin-bottom: 5px
+      .row-padding-title-sm
+        @media only screen and (max-width: $mobile)
+          .border-top
+            border: 0
+            font-weight: 500
+            font-size: 10px
+            line-height: 113.84%
+            color: #999999
+            padding-left: 0
+          &>div:nth-child(1)
+            display: none
+        .row-padding
+          min-height: auto
+          padding-top: 18px
+          padding-bottom: 10px
+      .row-padding-s
+        padding-top: 8px
+        padding-bottom: 7px
+        @media (max-width: $mobile)
+          .col-6
+            display: none
+          .col-4
+            padding: 0
+        &b
+          padding-bottom: 17px
+    &-tab
+      display: none
+      @media (max-width: $mobile)
+        display: flex
+        font-weight: 600
+        font-size: 14px
+        line-height: 113.84%
+        color: #27AE60
+        &>div
+          margin-right: 25px
+          cursor: default
+          &:last-child
+            margin-right: 0
+        .is-active
+          border-bottom: 1px solid #27AE60

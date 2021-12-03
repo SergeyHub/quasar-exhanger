@@ -1,0 +1,7 @@
+<svg width="32" height="25" viewBox="0 0 32 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="path-1-inside-1" fill="white">
+    <rect y="0.333984" width="31.7616" height="24.5018" rx="1"/>
+  </mask>
+  <rect y="0.333984" width="31.7616" height="24.5018" rx="1" stroke="white" stroke-width="4" mask="url(#path-1-inside-1)"/>
+  <path d="M17.3359 12.5861C17.3359 9.88067 19.5291 7.6875 22.2345 7.6875H30.763V17.4847H22.2345C19.5291 17.4847 17.3359 15.2915 17.3359 12.5861Z" stroke="white" stroke-width="2"/>
+</svg>

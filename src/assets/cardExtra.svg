@@ -1,0 +1,15 @@
+<svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 0.75H20C21.2426 0.75 22.25 1.75736 22.25 3V5.5V12C22.25 13.2426 21.2426 14.25 20 14.25H3C1.75736 14.25 0.75 13.2426 0.75 12V5.5V3C0.75 1.75736 1.75736 0.75 3 0.75Z" stroke="#969696" stroke-width="1.5"/>
+<path d="M17.3258 3.7821C17.3943 3.90076 17.4014 4.11147 17.2342 4.4548C17.0717 4.78866 16.7703 5.19014 16.3415 5.63335C15.4864 6.51722 14.1651 7.52518 12.5796 8.44059C10.9941 9.356 9.46054 9.99622 8.2675 10.2949C7.66927 10.4446 7.17092 10.5049 6.80051 10.4787C6.41959 10.4518 6.24066 10.3403 6.17215 10.2216C6.10364 10.103 6.09654 9.89227 6.26371 9.54894C6.42626 9.21507 6.72758 8.81359 7.15639 8.37039C8.01156 7.48652 9.33277 6.47855 10.9183 5.56314C12.5038 4.64773 14.0374 4.00752 15.2304 3.70885C15.8286 3.55909 16.327 3.49888 16.6974 3.52504C17.0783 3.55193 17.2573 3.66344 17.3258 3.7821Z" stroke="#D8004E" stroke-width="0.5"/>
+<g filter="url(#filter0_f)">
+<circle cx="11.9246" cy="6.9988" r="3.07692" fill="#D8004E"/>
+</g>
+<line x1="13.9124" y1="11.4805" x2="8.92175" y2="2.83642" stroke="#D8004E" stroke-width="0.5"/>
+<defs>
+<filter id="filter0_f" x="7.84766" y="2.92188" width="8.15385" height="8.15385" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur"/>
+</filter>
+</defs>
+</svg>

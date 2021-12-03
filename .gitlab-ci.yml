@@ -1,0 +1,14 @@
+stages:
+  - deploy_prod
+
+deploy_on_prod_server:
+  stage: deploy_prod
+  script:
+    - cd /var/www/exchanger-frontend
+    - npm i
+    - quasar build
+  tags:
+    - back_shell_prod
+  # when: manual
+  only:
+    - master
